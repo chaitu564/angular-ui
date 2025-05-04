@@ -1,0 +1,103 @@
+.weather-left-card,
+.weather-right-card {
+    margin: 8px 0px;
+    border: 1px solid rgb(179, 173, 173);
+    height: 90vh;
+    border-radius: 4px;
+}
+
+.top-sec {
+    height: 70vh;
+}
+
+.bottom-sec {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20vh;
+    margin: 5px;
+}
+
+.cls-row {
+    margin: 0px 10px;
+
+}
+
+.weather-right-card {
+    width: 73%;
+    margin-left: 14px !important;
+}
+
+.name-input-sec {
+    margin: 15px 0px;
+}
+
+.recent-loc-sec {
+    font: normal normal 400 12px/14px Sans-serif;
+    opacity: 0.6;
+    border-bottom: 2px solid rgb(179, 173, 173);
+}
+
+.city-details {
+    display: flex;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgb(179, 173, 173);
+
+    span {
+
+        font: normal normal 400 14px/14px Sans-serif;
+        opacity: 1;
+    }
+
+    .name-span {
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .icon1,
+    .icon2 {
+        width: 10%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+
+.right-refresh {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.left-header {
+    font: normal normal 600 16px/14px Sans-serif;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 15px;
+
+}
+.no-margin
+{
+    margin: 0px;
+}
+.main-weather-icon
+{
+    display: flex;
+}
+.text-weather
+{
+    padding: 63px 0px;
+    font: normal normal 500 16px/14px Sans-serif;
+    opacity: 1;
+}
+.week-icons
+{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin: 4px;
+    padding: 4px;
+}

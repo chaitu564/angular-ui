@@ -1,0 +1,69 @@
+<div class="row cls-row">
+    <div class="col-lg-3 col-md-3 weather-left-card">
+        <div class="top-sec">
+            <div class="input-group name-input-sec">
+                <input type="text" class="form-control" placeholder="Type City Name" aria-label="Type City Name"
+                    [(ngModel)]="cityName" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    (click)="addLocation(cityName)">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div>
+                <h4 class="recent-loc-sec"> Recent Locations</h4>
+                <div class="city-details" *ngFor="let data of lstCityDetails ;let i = index">
+                    <span class="name-span" (click)="showWeatherDetails(i)"> {{data.cityName}} - {{data.temp}}
+                        {{data.status}} </span>
+                    <span class="icon1" (click)="refresh(i)">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </span>
+                    <span class="icon2" (click)="delete(i)">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-sec">
+            <button class="btn btn-secondary border rounded-pill" (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8  weather-right-card">
+        <div class="weather-sec" *ngFor="let item of lstWeatherDetails;let i = index">
+            <div class="row no-margin">
+                <div class="col-lg-6 col-md-6 left-header">
+                   <h4>{{item.city}} </h4> 
+                </div>
+                <div class="col-lg-6 col-md-6 right-refresh">
+                    <span class="icon1" (click)="rigthRefresh(i)">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-lg-12 col-md-12 main-weather-icon">
+                    <div class="icon-weather">
+                        <img [src]="item.weatherIcon" alt="weather ICon" width="250px" height="250px">
+                    </div>
+                    <div class="text-weather">
+                        <p>{{item.temparature}}</p>
+                        <p>{{item.weatherStatus}}</p>
+                        <p>Wind : {{ item.windSpeed}} ms {{ item.windDeg}}</p>
+                        <p>Pressure: {{ item.pressure}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 week-icons">
+                    <div *ngFor ="let res of item.weeklyWeather;let i = index">
+                        <div *ngIf ="i>0">
+                            <p>{{res.date}}</p>
+                            <p>{{res.day}}</p>
+                            <p><img [src]="res.icon" alt="weather ICon" width="50px" height="50px"></p>
+                            <p>{{res.temp}}</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

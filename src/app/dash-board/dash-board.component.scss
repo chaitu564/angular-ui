@@ -1,0 +1,196 @@
+.left-menu {
+    background: black;
+    color: white;
+    height: 100vh;
+    padding: 0px;
+}
+
+.top-menu {
+    height: 80vh;
+}
+
+.header-txt {
+    font: normal normal 600 18px/20px Sans-serif;
+    padding: 8px;
+    margin: 6px;
+    text-align: center;
+}
+
+.isActive {
+    background: rgb(144, 138, 138);
+}
+
+.bottom-ul,
+ul {
+    padding: 0px;
+
+    .no-dots {
+        display: block;
+        list-style-type: none;
+        padding: 8px 50px;
+        margin: 10px 0px !important;
+    }
+}
+
+.right-section {  
+    padding: 8px;
+    border-bottom: 1px solid #ece7e7;
+    .dropdown-placeholder {
+        font: normal normal 600 18px/22px Sans-serif;
+    }
+}
+
+.add-new-sec {   
+    padding: 8px;
+    border-bottom: 1px solid #ece7e7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .add-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: normal normal 400 14px/18px Sans-serif;
+    }
+}
+
+.img-style {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.fillter-sec {   
+    padding: 8px;
+    border-bottom: 1px solid #ece7e7;
+    display: flex;
+    align-items: center;
+
+    .fillter-dropdown {
+        width: 22%;
+        margin: 4px 0px;
+
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+
+    }
+
+    .search-box {
+        margin: 4px 0px;
+        width: 40%;
+        position: relative;
+
+        #button-addon2 {
+            position: absolute;
+            right: 0px !important;
+        }
+
+        .btn:active,
+        .btn:focus {
+
+            border: none !important;
+        }
+    }
+}
+
+.date-sec {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(170 159 159);
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    overflow: hidden;
+}
+
+
+.date-sec {   
+    padding: 8px;
+    border-bottom: 1px solid #ece7e7;
+}
+.profile-main-card
+{
+ 
+   margin: 15px 0px 4px 0px;
+
+
+}
+.pro-card {
+    border: 1px solid rgb(181, 175, 175);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.card {
+    height: 39vh;
+
+    .sub-card {
+        padding: 13px 0px 4px 0px;
+    }
+}
+
+.profile-name,
+.profile-role {
+    text-align: center;
+    padding: 4px 15px 1px 15px;
+    font: normal normal 500 14px/18px Sans-serif;
+    opacity: 1;
+}
+
+.profile-role,
+.p-txt {
+    font: normal normal 500 14px/18px Sans-serif !important;
+    opacity: 0.6 !important;
+}
+
+.projection {
+    margin: 15px 0px;
+
+    p {
+        margin: 4px;
+    }
+
+    .p-val {
+        font: normal normal 500 14px/18px Sans-serif;
+        opacity: 1;
+    }
+
+    .col-div {
+        text-align: center;
+    }
+    
+}
+.profile-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.no-pad
+{
+    padding: 0px;
+}
+.no-margin
+{
+    margin: 0px;
+}

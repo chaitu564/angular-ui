@@ -1,0 +1,263 @@
+[
+   {
+      "coord": {
+         "lon": 7.367,
+         "lat": 45.133
+      },
+      "weather": [
+         {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10d",
+            "temp": "20C"
+         }
+      ],
+      "base": "stations",
+      "main": {
+         "temp": 30.2,
+         "feels_like": 282.93,
+         "temp_min": 283.06,
+         "temp_max": 286.82,
+         "pressure": 1021,
+         "humidity": 60,
+         "sea_level": 1021,
+         "grnd_level": 910
+      },
+      "visibility": 10000,
+      "wind": {
+         "speed": 4.09,
+         "deg": 121,
+         "gust": 3.47
+      },
+      "rain": {
+         "1h": 2.73
+      },
+      "clouds": {
+         "all": 83
+      },
+      "dt": 1726660758,
+      "sys": {
+         "type": 1,
+         "id": 6736,
+         "country": "IT",
+         "sunrise": 1726636384,
+         "sunset": 1726680975
+      },
+      "timezone": 7200,
+      "id": 3165523,
+      "name": "London",
+      "cod": 200,
+      "weeklyWeather": [
+         {
+            "day": "Mon",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Tue",
+            "temp": "10C",
+            "status": "Rain"
+         },
+         {
+            "day": "Wed",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Thu",
+            "temp": "50C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Fri",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Sat",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Sun",
+            "temp": "10C",
+            "status": "Cloudy"
+         }
+      ]
+   },
+   {
+      "coord": {
+         "lon": 7.367,
+         "lat": 45.133
+      },
+      "weather": [
+         {
+            "id": 501,
+            "main": "Day",
+            "description": "moderate rain",
+            "icon": "10d",
+            "temp": "30C"
+         }
+      ],
+      "base": "stations",
+      "main": {
+         "temp": 284.2,
+         "feels_like": 282.93,
+         "temp_min": 283.06,
+         "temp_max": 286.82,
+         "pressure": 1021,
+         "humidity": 60,
+         "sea_level": 1021,
+         "grnd_level": 910
+      },
+      "visibility": 10000,
+      "wind": {
+         "speed": 4.09,
+         "deg": 121,
+         "gust": 3.47
+      },
+      "rain": {
+         "1h": 2.73
+      },
+      "clouds": {
+         "all": 83
+      },
+      "dt": 1726660758,
+      "sys": {
+         "type": 1,
+         "id": 6736,
+         "country": "IT",
+         "sunrise": 1726636384,
+         "sunset": 1726680975
+      },
+      "timezone": 7200,
+      "id": 3165523,
+      "name": "India",
+      "cod": 200,
+      "weeklyWeather": [
+         {
+            "day": "Mon",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Tue",
+            "temp": "20C",
+            "status": "Rain"
+         },
+         {
+            "day": "Wed",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Thu",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Fri",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Sat",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Sun",
+            "temp": "20C",
+            "status": "Cloudy"
+         }
+      ]
+   },
+   {
+      "coord": {
+         "lon": 7.367,
+         "lat": 45.133
+      },
+      "weather": [
+         {
+            "id": 501,
+            "main": "Cloudy",
+            "description": "moderate rain",
+            "icon": "10d",
+            "temp": "40C"
+         }
+      ],
+      "base": "stations",
+      "main": {
+         "temp": 284.2,
+         "feels_like": 282.93,
+         "temp_min": 283.06,
+         "temp_max": 286.82,
+         "pressure": 1021,
+         "humidity": 60,
+         "sea_level": 1021,
+         "grnd_level": 910
+      },
+      "visibility": 10000,
+      "wind": {
+         "speed": 4.09,
+         "deg": 121,
+         "gust": 3.47
+      },
+      "rain": {
+         "1h": 2.73
+      },
+      "clouds": {
+         "all": 83
+      },
+      "dt": 1726660758,
+      "sys": {
+         "type": 1,
+         "id": 6736,
+         "country": "IT",
+         "sunrise": 1726636384,
+         "sunset": 1726680975
+      },
+      "timezone": 7200,
+      "id": 3165523,
+      "name": "New York",
+      "cod": 200,
+      "weeklyWeather": [
+         {
+            "day": "Mon",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Tue",
+            "temp": "20C",
+            "status": "Rain"
+         },
+         {
+            "day": "Wed",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Thu",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Fri",
+            "temp": "20C",
+            "status": "Cloudy"
+         },
+         {
+            "day": "Sat",
+            "temp": "20C",
+            "status": "Day"
+         },
+         {
+            "day": "Sun",
+            "temp": "20C",
+            "status": "Cloudy"
+         }
+      ]
+   }
+]

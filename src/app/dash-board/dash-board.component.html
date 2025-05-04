@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="col-lg-2 col-md-2 left-menu">
+        <div class="top-menu">
+            <p class="fs-1s header-txt">workit</p>
+            <ul>
+                <li *ngFor="let item of lsLeftMenuArr;let i=index" class="no-dots">
+                    <span><i [ngClass]=item.icon></i></span>
+                    <span class="p-2"> {{item.name}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-menu">
+            <ul class="bottom-ul">
+                <li *ngFor="let item of lsbottomMenuArr;let i=index" class="no-dots"
+                    [ngClass]="item.name =='Settings' ? 'isActive':''">
+                    <span><i [ngClass]=item.icon></i></span>
+                    <span class="p-2"> {{item.name}}</span>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="col-lg-10 col-md-10 no-pad">
+        <div class="row no-margin">
+            <div class="col-md-6 col-lg-6 right-section">
+                <div class="dropdown ">
+                    <button class="btn btn-with dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-placeholder">Team </span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Team A</button></li>
+                        <li><button class="dropdown-item" type="button">Team B</button></li>
+                        <li><button class="dropdown-item" type="button">Team C</button></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-6 add-new-sec">
+
+                <button class="btn btn-primary rounded-pill add-btn" type="button">
+                    <span class="add-new-user">New User + </span>
+                </button>
+                <div class="circle"><i class="fa-solid fa-bell"></i></div>
+                <div class="circle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="circle"><img src="../../assets/profile-pic.jpg" alt="img" class="img-style"></div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 fillter-sec">
+                <div class="dropdown fillter-dropdown">
+                    <button class="btn btn-with dropdown-toggle border rounded-pill" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-placeholder">Filter Users <i class="fa fa-sort-amount-desc"></i> </span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">John</button></li>
+                        <li><button class="dropdown-item" type="button">Robert</button></li>
+                        <li><button class="dropdown-item" type="button">Paul</button></li>
+                    </ul>
+                </div>
+
+                <div class="input-group  search-box">
+                    <input type="text" class="form-control rounded-pill" placeholder="Try `Miami beachhouse`"
+                        aria-label="Try Miami beachhouse" aria-describedby="button-addon2">
+                    <button class="btn" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-6 date-sec">
+                <div class="dropdown ">
+                    <button class="btn btn-with dropdown-toggle border rounded-pill" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-placeholder">Sort by date </span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">{{lstDate}}</button></li>
+
+                    </ul>
+                </div>
+                <div class="circle"><i class="fa fa-ellipsis-v"></i>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-md-3 profile-main-card" *ngFor="let data of lsProfileData;let i=index;">
+                <div class="card">
+                    <div class="sub-card">
+                        <div class="pro-card">
+                            <img src="{{data.img}}" alt="" class="profile-img">
+                        </div>
+                        <div class="profile-name">
+                            {{data.name}}
+                        </div>
+                        <div class="profile-role">
+                            {{data.role}}
+                        </div>
+                        <div class="row projection">
+                            <div class="col-lg-4 col-md-4 col-div">
+                                <p class="p-txt">Project</p>
+                                <p class="p-val">{{data.projects}}</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-div">
+                                <p class="p-txt">Task</p>
+                                <p class="p-val">{{data.task}}</p>
+    
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-div">
+                                <p class="p-txt">Insights</p>
+                                <p class="p-val">{{data.insights}}</p>
+                            </div>
+                        </div>
+    
+                        <div class="profile-btn">
+                            <button class="btn btn-with border rounded-pill" >View Profile</button>
+                        </div>
+                    </div>
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

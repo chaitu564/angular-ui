@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid ">
+        <a class="navbar-brand" (click)="onRoute('counter')">
+            <span class="tab-txt">Counter App  </span>
+            <span class="badge rounded-circle text-bg-secondary">{{selectedCountNo}}</span>
+        </a>
+        <a class="navbar-brand" (click)="onRoute('weather')">
+            <span class="tab-txt">Weather APP  </span> 
+        </a>
+    </div>
+
+</nav>
+
+<router-outlet>
+
+</router-outlet>
