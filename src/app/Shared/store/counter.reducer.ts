@@ -3,6 +3,7 @@ import { CounterState } from "./counter.sate";
 import *as CounterActions from './counter.action'
 // import { decrement, increment, reset } from "./counter.action";
 import { state } from "@angular/animations";
+import { Action } from "rxjs/internal/scheduler/Action";
 
 
 export const initialState: CounterState = {
@@ -12,26 +13,27 @@ export const initialState: CounterState = {
 const _counterReducer = createReducer(initialState,
     on(CounterActions.increment, (state, { index }) => ({
         ...state,
-        counters: state.counters.map((val, i) => {
-            let output = i === index ? val + 1 : val;
-            return output;
-        })      
+        counters: state.counters.map((val, i) =>  val + 1
+
+     
+
+
+    )      
     })
 
     ),
     on(CounterActions.decrement, (state, { index }) => ({
         ...state,
-        counters: state.counters.map((val, i) => {
-            let outputDec = i === index ? val - 1 : val
-            return outputDec;
-        }),
+        counters: state.counters.map((val, i) =>  val - 1
+        
+            
+     
+    ),
     })
 
     ),
 
-    // on(reset,(state) => {
-    //     return {...state,counter:0}
-    // } ),
+  
 );
 
 
