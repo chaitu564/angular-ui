@@ -93,21 +93,25 @@ export class WeatherAppComponent implements OnInit {
     }
 
     selectedWeatherDetails.weeklyWeather.forEach((e: any, i: number) => {
-      if (i < 7) {
+      if (i <= 6) {
         let date = new Date();
         let day = i == 0 ? date.getDay() : date.getDay() + i;
         const dayIndex = date.getDate();
         let weekNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        let findTemp = selectedWeatherDetails.weeklyWeather.find((a: any) => a.day == weekNames[day])?.temp;
-        let status = selectedWeatherDetails.weeklyWeather.find((a: any) => a.day == weekNames[day])?.status
-        let obj2 = {
-          day: weekNames[day],
-          icon: status.toLowerCase() == 'rain' ? '/assets/rainy-1.svg' : status.toLowerCase() == 'cloudy' ? '/assets/cloudy.svg' : '/assets/day.svg',
-          date: i == 0 ? dayIndex : dayIndex + i,
-          temp: findTemp
+        if(weekNames[day] != undefined)
+        {
+          let findTemp = selectedWeatherDetails.weeklyWeather.find((a: any) => a.day == weekNames[day])?.temp;
+          let status = selectedWeatherDetails.weeklyWeather.find((a: any) => a.day == weekNames[day])?.status;
+          let obj2 = {
+            day: weekNames[day],
+            icon: status.toLowerCase() == 'rain' ? '/assets/rainy-1.svg' : status.toLowerCase() == 'cloudy' ? '/assets/cloudy.svg' : '/assets/day.svg',
+            date: i == 0 ? dayIndex : dayIndex + i,
+            temp: findTemp
+          }
+         
+            obj1.weeklyWeather.push(obj2);
         }
-       
-          obj1.weeklyWeather.push(obj2);
+        
       
         
       }
