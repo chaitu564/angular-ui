@@ -66,7 +66,7 @@ export class WeatherAppComponent implements OnInit {
       this.lstCityDetails.splice(index, 1);
       this.lstCityDetails.push({ ...refreshValue });
     }
-  }
+  } 
 
   cancel() {
     this.lstCityDetails = [];
