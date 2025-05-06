@@ -32,18 +32,19 @@ export class CounterAppComponent implements OnInit {
 
   resetCounters() {
     this.countersArr = [];
+    this.countNo = 0;
   }
 
-  increment(i:number) {
+  increment(index:number) {
     // if(this.countersArr[index])
     // {
-      this.store.dispatch(increment({index:i}));
+      this.store.dispatch(increment({index}));
     // }
   
   }
 
-  decrement(i:number) {
-    this.store.dispatch(decrement({index:i}));
+  decrement(index:number) {
+    this.store.dispatch(decrement({index}));
 
   }
 
